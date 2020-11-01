@@ -1,17 +1,19 @@
-###Exercício Prático de Integração com o Mongodb:
+## Exercício Prático de Integração com o Mongodb:
 
-Esse projeto prático possui como finalidade consolidar os conhecimentos adquiridos com o curso até este momento.
+### Esse projeto prático possui como finalidade consolidar os conhecimentos adquiridos com o curso até este momento.
 
-1 - Instalar a dependência do mongoose no projeto:
+**1 -** Instalar a dependência do mongoose no projeto:
 
+```
 npm install mongoose
+```
 
-2 - Criar a string de conexão com o mongo, lembre-se que o nome do banco será : clientes. Lembre-se de criar a conexão e validar se realmente o banco está logado exibindo uma mensagem de suceso no console.
+**2 -**  Criar a string de conexão com o mongo, lembre-se que o nome do banco será : clientes. Lembre-se de criar a conexão e validar se realmente o banco está logado exibindo uma mensagem de suceso no console.
 
-3 - Após se certificar de que existe conexão com o mongo, será necessário estruturar o seu objeto que será armazenado no banco, o clientes (clientesSchema). 
+**3 -**  Após se certificar de que existe conexão com o mongo, será necessário estruturar o seu objeto que será armazenado no banco, o clientes (clientesSchema). 
 
 O seu schema de cliente deverá conter as seguintes propriedades:
-
+```
 nome (String)
 email: (String)
 cpf: (Number)
@@ -19,11 +21,12 @@ dataNascimento: (String)
 estadoCivil: (String)
 telefone: (Number)
 comprou: (Boolean)
+```
 
+**4 -**  Recomendamos criar uma coleção do postman para armazenar as suas requisições.
 
-4 - Recomendamos criar uma coleção do postman para armazenar as suas requisições.
+**5 -**  O Seu projeto deverá conter as seguintes rotas/endpoints com os respectivos retornos:
 
-5 - O Seu projeto deverá conter as seguintes rotas/endpoints com os respectivos retornos:
 ```
 POST/clientes
 Incluir um novo cliente conforme as característisticas informadas no contrato do model. (HTTP 201 OK)
