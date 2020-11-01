@@ -22,7 +22,7 @@ comprou: (Boolean)
 4 - Recomendamos criar uma coleção do postman para armazenar as suas requisições.
 
 5 - O Seu projeto deverá conter as seguintes rotas/endpoints com os respectivos retornos:
-
+```
 POST/clientes
 Incluir um novo cliente conforme as característisticas informadas no contrato do model. (HTTP 201 OK)
 Resposta:
@@ -85,3 +85,4 @@ Resposta:
         "comprou": true
     }
 ]
+```
