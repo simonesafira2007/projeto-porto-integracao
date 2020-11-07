@@ -1,22 +1,25 @@
 {
   "name": "projeto-porto-integracao",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "### Esse projeto prático possui como finalidade consolidar os conhecimentos adquiridos com o curso até este momento.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mariliamessias/projeto-porto-integracao.git"
+    "url": "git+https://github.com/simonesafira2007/projeto-porto-integracao.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mariliamessias/projeto-porto-integracao/issues"
+    "url": "https://github.com/simonesafira2007/projeto-porto-integracao/issues"
   },
-  "homepage": "https://github.com/mariliamessias/projeto-porto-integracao#readme",
+  "homepage": "https://github.com/simonesafira2007/projeto-porto-integracao#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11",
+    "nodemon": "^2.0.6"
   }
 }
