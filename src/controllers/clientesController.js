@@ -64,9 +64,32 @@ const postCliente = (req, res) => {
   });
 };
 
+
+// localhost:8080/clientes
+const deleteClienteComprou = (req, res) => {
+
+  // Deleta quando comprou = true
+  clientes.deleteMany({ comprou: true }, function (err ){
+    if(err) { 
+      res.status(500).send({ 
+        message: err.message, 
+        status: "FAIL" 
+       })
+    }
+   
+    res.status(200).send({ 
+      message: "Cliente removido com sucesso", 
+      status: "SUCCESS" 
+    })
+  })
+  
+};
+
+
 module.exports = {
   getAll,
   getCompradores,
   getByCpf,
   postCliente,
-};
+  deleteClienteComprou,
+}

@@ -6,5 +6,6 @@ router.get("/", controller.getAll);
 router.get("/compradores", controller.getCompradores);
 router.get("/:cpf", controller.getByCpf);
 router.post("/", controller.postCliente);
+router.delete("/", controller.deleteClienteComprou)
 
 module.exports = router;
