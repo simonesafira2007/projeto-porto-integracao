@@ -86,10 +86,32 @@ const deleteClienteComprou = (req, res) => {
 };
 
 
+//localhost:8080/clientes/cpf
+const putCliente = (req, res) => {
+  const cpf = req.params.cpf;
+
+  //faz o update apenas para quem respeitar o id passado no parametro
+  // set são os valores que serão atualizados
+  //UpdateMany atualiza vários registros de uma unica vez
+  //UpdateOne atualiza um único registro por vez
+  
+  clientes.updateMany({ cpf }, { $set : req.body }, function (err) {
+    if (err) {
+      res.status(500).send({ message: err.message })
+    }
+    res.status(200).send({ message: "Registro alterado com sucesso"})
+  })
+  
+}
+
+
+
+
 module.exports = {
   getAll,
   getCompradores,
   getByCpf,
   postCliente,
   deleteClienteComprou,
+  putCliente,
 }

@@ -7,5 +7,7 @@ router.get("/compradores", controller.getCompradores);
 router.get("/:cpf", controller.getByCpf);
 router.post("/", controller.postCliente);
 router.delete("/", controller.deleteClienteComprou)
+router.put("/:cpf", controller.putCliente )
+
 
 module.exports = router;
